@@ -122,31 +122,9 @@ Example output format:
 ## System Architecture
 JobSeek AI Agent follows an Agentic AI workflow architecture, where an intelligent agent coordinates multiple tools and reasoning modules.
 
-Pipeline Overview:
-```
-User Goal
-   ↓
-Task Planner Agent
-   ↓
-Search Agent
-   ↓
-Web Search Tool
-   ↓
-Web Scraper Tool
-   ↓
-Job Data Extractor
-   ↓
-LLM Job Classifier
-   ↓
-Skill Extractor
-   ↓
-Duplicate Remover
-   ↓
-Data Formatter
-   ↓
-JSON / CSV Output
-```
-Core architecture principle: LLM + Tools + Autonomous Planning
+<p align="center">
+  <img src="assets/Agentic Al Job Search System.png" width="95%">
+</p>
 
 # Technology Stack
 
