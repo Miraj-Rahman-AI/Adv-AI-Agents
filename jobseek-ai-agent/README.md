@@ -177,6 +177,7 @@ jobseek-ai-agent/
 │   └── site_router_tool.py
 │
 ├── pipeline/
+│   ├── __init__.py
 │   ├── job_pipeline.py
 │   ├── orchestrator.py
 │   └── state.py
