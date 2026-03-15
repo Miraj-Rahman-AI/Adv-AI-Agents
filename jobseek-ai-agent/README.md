@@ -153,6 +153,8 @@ jobseek-ai-agent/
 ├── .env.example
 ├── .gitignore
 ├── main.py
+├── assets/
+│   └── Automated Pipeline for Finding Al Engineer Jobs.png
 │
 ├── config/
 │   ├── settings.py
