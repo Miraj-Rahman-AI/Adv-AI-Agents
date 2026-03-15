@@ -154,33 +154,82 @@ JobSeek AI Agent follows an Agentic AI workflow architecture, where an intellige
 
 ## Repository Structure
 ```
-jobseek-ai-agent
-│
-├── agents
-│   ├── planner_agent.py
-│   ├── search_agent.py
-│   ├── classification_agent.py
-│
-├── tools
-│   ├── web_search_tool.py
-│   ├── scraper_tool.py
-│   ├── parser_tool.py
-│
-├── pipeline
-│   └── job_pipeline.py
-│
-├── data
-│   └── jobs_raw.json
-│
-├── output
-│   ├── jobs.csv
-│   └── jobs.json
-│
-├── tests
+jobseek-ai-agent/
 │
 ├── README.md
 ├── requirements.txt
-└── main.py
+├── .env.example
+├── .gitignore
+├── main.py
+│
+├── config/
+│   ├── settings.py
+│   └── constants.py
+│
+├── agents/
+│   ├── planner_agent.py
+│   ├── search_agent.py
+│   ├── classifier_agent.py
+│   ├── query_rewriter_agent.py
+│   └── skill_extractor_agent.py
+│
+├── tools/
+│   ├── web_search_tool.py
+│   ├── scraper_tool.py
+│   ├── parser_tool.py
+│   ├── exporter_tool.py
+│   └── site_router_tool.py
+│
+├── pipeline/
+│   ├── job_pipeline.py
+│   ├── orchestrator.py
+│   └── state.py
+│
+├── core/
+│   ├── models.py
+│   ├── schemas.py
+│   ├── deduplicator.py
+│   ├── validators.py
+│   └── normalizer.py
+│
+├── prompts/
+│   ├── classify_job.txt
+│   ├── extract_skills.txt
+│   └── rewrite_query.txt
+│
+├── utils/
+│   ├── logger.py
+│   ├── helpers.py
+│   ├── retry.py
+│   └── io.py
+│
+├── data/
+│   ├── raw/
+│   │   └── jobs_raw.json
+│   ├── processed/
+│   │   └── jobs_clean.json
+│   └── sample/
+│       └── sample_jobs.json
+│
+├── output/
+│   ├── jobs.csv
+│   ├── jobs.json
+│   └── report.md
+│
+├── tests/
+│   ├── test_agents.py
+│   ├── test_parser.py
+│   ├── test_deduplication.py
+│   └── test_pipeline.py
+│
+├── examples/
+│   ├── demo_run.py
+│   └── example_output.json
+│
+└── docs/
+    ├── architecture.md
+    ├── workflow.md
+    └── interview_notes.md
 ```
 
 ## Installation
