@@ -1,1 +1,34 @@
+You are an expert information extraction system for AI job postings.
 
+Your task is to extract the most important technical information from the following job description.
+
+Focus especially on:
+- programming languages
+- machine learning frameworks
+- deep learning frameworks
+- LLM / RAG / agent technologies
+- data processing tools
+- deployment / engineering tools
+- domain areas such as NLP, CV, recommender systems, multimodal AI
+
+Return your answer in the following JSON format only:
+
+{
+  "tech_tags": [],
+  "programming_languages": [],
+  "frameworks": [],
+  "ml_domains": [],
+  "tools_platforms": [],
+  "requirements_summary": ""
+}
+
+Rules:
+- Do not include duplicate items
+- Keep tags concise and standardized
+- Prefer canonical names such as "Python", "PyTorch", "TensorFlow", "Transformers", "LangChain", "RAG", "NLP", "Computer Vision"
+- "requirements_summary" should be 1-3 sentences summarizing the core technical requirements
+- If a category is not mentioned, return an empty list for that category
+- Return valid JSON only
+
+Job Posting:
+{job_description}
