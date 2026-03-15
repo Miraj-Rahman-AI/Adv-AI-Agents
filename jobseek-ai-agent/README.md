@@ -183,6 +183,7 @@ jobseek-ai-agent/
 │   └── state.py
 │
 ├── core/
+│   ├── __init__.py
 │   ├── models.py
 │   ├── schemas.py
 │   ├── deduplicator.py
