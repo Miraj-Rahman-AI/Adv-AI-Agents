@@ -1,147 +1,287 @@
-# Autonomous-Research-Agent
-### An Advanced Multi-Agent AI System for Autonomous Academic Research, Paper Analysis, and Knowledge Synthesis
-Autonomous-Research-Agent is a production-grade, research-oriented AI agent system designed to autonomously discover, analyze, and synthesize academic knowledge from scientific literature. Built using modern agent orchestration frameworks and large language models, this system enables fully automated academic research workflows from paper discovery to structured report generation.
+# JobSeek AI Agent
+### Autonomous Agentic AI System for AI Engineer Job Discovery
 
-This project is designed for:
-- AI researchers
-- PhD students
-- Engineers building research agents
-- Autonomous AI system developers
-- Next-generation RAG and agentic AI research
+JobSeek AI Agent is an **Agentic AI-powered automation system** that autonomously searches, collects, filters, and structures **AI Engineer campus recruitment and internship job postings** from multiple recruitment platforms. Unlike traditional web crawlers, this system uses **Large Language Models (LLMs)** combined with **tool orchestration and autonomous planning** to perform complex job discovery workflows. The agent can dynamically generate search queries, scrape job listings, analyze job descriptions, extract relevant technical skills, and output structured job datasets. This project demonstrates how **Agentic AI systems can automate real-world information gathering tasks**, showcasing capabilities such as autonomous task planning, tool usage, semantic reasoning, and iterative search optimization.
 
 
-## Key Capabilities
-### Autonomous Paper Discovery
-- Searches relevant papers from arXiv
-- Extracts metadata and abstracts
-- Filters papers based on research goals
+# Project Motivation
+Searching for AI Engineer job opportunities across multiple platforms is time-consuming and inefficient. Each recruitment website presents job information differently, requiring manual filtering and comparison. The goal of this project is to build an **intelligent AI agent that automates the entire job search pipeline**, allowing users to automatically collect and organize AI-related job opportunities.
 
-### Intelligent Paper Analysis
-- Converts PDF → Markdown
-- Section-wise summarization
-- Key contribution extraction
-- Strength & limitation analysis
+JobSeek AI Agent can automatically:
+- Search multiple recruitment websites
+- Discover AI-related job postings
+- Extract key job information
+- Filter relevant AI Engineer roles
+- Remove duplicate job listings
+- Generate structured job datasets
+This project demonstrates the potential of **Agentic AI architectures in real-world automation scenarios**.
 
-### Multi-Agent Research Workflow
-- Specialized agents collaborate:
-- Research planner agent
-- Paper search agent
-- Paper analyzer agent
-- Report generator agent
-- Task evaluator agent
 
-### Goal-Oriented Research Reasoning
-- Clarifies research objective via interactive reasoning
-- Decomposes complex research goals
-- Iteratively improves research results
+# Key Features
+## Autonomous Task Planning
 
-### Automated Research Report Generation
-- Structured academic report
-- Bullet-point findings
-- Key insights extraction
-- Literature synthesis
+The agent begins by interpreting the user goal and decomposing it into smaller executable tasks.
+
+Example user goal: Find 50 AI Engineer campus recruitment jobs
+
+
+The agent automatically plans the workflow: Search → Scrape → Parse → Filter → Deduplicate → Export
+
+
+This planning capability allows the agent to operate autonomously without manual intervention.
+
+
+## Multi-Platform Job Discovery
+
+The agent collects job postings from **multiple recruitment platforms** such as:
+
+- LinkedIn
+- Indeed
+- Lagou
+- Zhipin
+- Liepin
+- Company career websites
+
+If one platform fails or returns insufficient results, the agent automatically switches to another source.
+
+
+## Iterative Search Strategy
+
+If the collected job postings are fewer than the required number, the agent dynamically expands its search queries.
+
+Example query expansion strategy:
+- AI Engineer
+- Machine Learning Engineer
+- Algorithm Engineer
+- LLM Engineer
+- Deep Learning Engineer
+- Data Scientist
+
+This iterative process ensures the agent eventually gathers the required number of job postings.
+
+
+## LLM-Based Semantic Job Filtering
+
+The system uses **Large Language Models (LLMs)** to determine whether a job posting truly belongs to the AI engineering domain.
+
+The classifier analyzes job descriptions and identifies relevant technical domains such as:
+
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Computer Vision
+- Large Language Models
+- Data Science
+
+This prevents the agent from collecting unrelated roles such as backend engineering or general software development positions.
+
+## Automatic Technical Skill Extraction
+The agent extracts **technical skill tags** from job descriptions using semantic analysis.
+Example extracted skills include:
+- Python
+- PyTorch
+- TensorFlow
+- Transformers
+- NLP
+- Computer Vision
+- Recommendation Systems
+These tags help create structured technical skill profiles for each job posting.
+
+## Data Cleaning and Deduplication
+
+The system automatically cleans and standardizes collected job data by performing:
+
+- Duplicate job detection
+- Missing data handling
+- Field normalization
+- Structured formatting
+This ensures that the final dataset is clean, consistent, and ready for analysis.
+
+## Structured Output Generation
+
+The final job dataset is exported in structured formats:
+
+- JSON
+- CSV
+
+Example output format:
+
+```json
+{
+"title": "AI Engineer",
+"company": "Example Tech",
+"location": "Beijing",
+"salary": "20K-35K",
+"tech_tags": ["Python", "PyTorch", "NLP"],
+"requirements": "Experience with machine learning and deep learning frameworks",
+"source": "LinkedIn",
+"job_url": "https://example.com/job"
+}
+```
 
 ## System Architecture
-![Autonomous Research Agent](assets/Autonomous-Research-Agent%20Framework.png)
+JobSeek AI Agent follows an Agentic AI workflow architecture, where an intelligent agent coordinates multiple tools and reasoning modules.
 
- ## Tech Stack
-- Python 3.11+
-- LangGraph (multi-agent orchestration)
+Pipeline Overview:
+```
+User Goal
+   ↓
+Task Planner Agent
+   ↓
+Search Agent
+   ↓
+Web Search Tool
+   ↓
+Web Scraper Tool
+   ↓
+Job Data Extractor
+   ↓
+LLM Job Classifier
+   ↓
+Skill Extractor
+   ↓
+Duplicate Remover
+   ↓
+Data Formatter
+   ↓
+JSON / CSV Output
+```
+Core architecture principle: LLM + Tools + Autonomous Planning
+
+# Technology Stack
+
+## Programming Language
+- Python
+
+## Agent Frameworks
 - LangChain
-- OpenAI / Anthropic / Cohere LLMs
-- arXiv API
-- Jina Reader
-- Markdown processing pipeline
-- VS Code + LangGraph Studio
+- LangGraph
+- OpenAI Tool Calling
+- ReAct Agents
 
-  ##  Project Structure
- ``` 
-Autonomous-Research-Agent/
+## Web Data Collection
+- Selenium
+- BeautifulSoup
+- Requests
+
+## Data Processing
+- Pandas
+- Regex
+- JSON
+
+## AI Models
+- OpenAI GPT
+- Local LLMs (optional)
+
+
+## Repository Structure
+```
+jobseek-ai-agent
 │
-├── researche_agent/
-│   ├── agent/              # Multi-agent implementations
-│   ├── chains/             # LLM reasoning chains
-│   ├── searcher/           # arXiv search module
-│   ├── service/            # PDF → Markdown + storage
-│   ├── models/             # Data models
-│   └── settings.py
+├── agents
+│   ├── planner_agent.py
+│   ├── search_agent.py
+│   ├── classification_agent.py
 │
-├── fixtures/               # Test papers & samples
-├── storage/markdown/       # Processed papers
-├── logs/                   # Logs
-├── langgraph.json          # LangGraph config
-├── pyproject.toml
-└── README.md
+├── tools
+│   ├── web_search_tool.py
+│   ├── scraper_tool.py
+│   ├── parser_tool.py
+│
+├── pipeline
+│   └── job_pipeline.py
+│
+├── data
+│   └── jobs_raw.json
+│
+├── output
+│   ├── jobs.csv
+│   └── jobs.json
+│
+├── tests
+│
+├── README.md
+├── requirements.txt
+└── main.py
 ```
 
 ## Installation
-### 1. Clone Repository
+Clone the repository:
 ```
-git clone https://github.com/Fantasy-Tech-Developer/Autonomous-Research-Agent.git
-cd Autonomous-Research-Agent
+git clone https://github.com/Miraj-Rahman-AI/Adv-AI-Agents/edit/main/jobseek-ai-agent.git
+cd jobseek-ai-agent
 ```
+Create a virtual environment:
+```
+python -m venv venv
+```
+Activate the environment:
+```
+source venv/bin/activate
+```
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+### Running the Agent
+Run the autonomous job search system:
+```
+python main.py
+```
+The agent will automatically perform the following steps:
+- Generate job search queries
+- Collect job postings from multiple platforms
+- Filter AI-related job roles
+- Extract structured job information
+- Remove duplicate listings
+- Export results as structured datasets
 
-### 2. Install uv (dependency manager)
+Generated datasets will be saved in:
 ```
-pip install uv
+output/jobs.csv
+output/jobs.json
 ```
+## Example Output
+Example job entry:
+```
+Title: AI Engineer
+Company: Tencent
+Location: Shenzhen
+Salary: 25K-40K
+Tech Tags: Python, PyTorch, NLP, Transformers
+Source: Lagou
+URL: https://example-job-url
+```
+# Agent Capabilities Demonstrated
 
-### 3. Install dependencies
-```
-uv sync
-```
+This project demonstrates several core **Agentic AI capabilities**:
 
-## Environment Setup
+- Autonomous task planning
+- External tool orchestration
+- LLM-powered semantic reasoning
+- Iterative query optimization
+- Multi-source information aggregation
+- Structured data generation
 
-Copy environment file:
-```
-cp .env.sample .env
-```
-Set API keys:
-```
-OPENAI_API_KEY=
-ANTHROPIC_API_KEY=
-COHERE_API_KEY=
-JINA_API_KEY=
-LANGSMITH_API_KEY= (optional)
-```
-## Running the System
-#### Launch LangGraph Studio
-```
-uv run langgraph dev --no-reload
-```
-Open:
-```
-http://localhost:8123
-```
-Enter research goal → Run agent → Watch autonomous research process.
+# Possible Extensions
 
-## Test Individual Agents
-### Paper Analysis Agent
-```
-uv run python -m arxiv_researcher.agent.paper_analyzer_agent fixtures/sample.md
-```
-### Paper Search Agent
-```
-uv run python -m arxiv_researcher.agent.paper_search_agent
-```
+Future improvements could include:
 
-## Example Research Tasks
-- "Find latest research on autonomous LLM agents"
-- "Survey papers on RAG security"
-- "Analyze multimodal LLM research trends"
-- "Summarize top 10 papers on AI safety"
+- Real-time job monitoring agents
+- AI-powered job recommendation systems
+- Resume-job matching automation
+- Skill gap analysis for candidates
+- Multi-language job discovery
+- Autonomous job application assistants
 
-## Research & Engineering Goals
 
-- Autonomous-Research-Agent aims to become a next-generation research intelligence system.
-- Future directions:
-- Self-improving research agents
-- Multi-paper reasoning
-- Research memory graph
-- Citation network analysis
-- AI scientist agents
-- Fully autonomous literature review system
+# Use Cases
+
+- Automated job search assistants
+- AI recruitment intelligence tools
+- Career analytics platforms
+- Agentic AI research experiments
+
 
 ##  Author
 **[Miraj Rahman](https://github.com/Miraj-Rahman-AI)**  
