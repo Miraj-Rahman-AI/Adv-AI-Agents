@@ -1,1 +1,51 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment variables
+.env
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local outputs
+output/*.json
+output/*.csv
+output/*.md
+
+# Local data dumps
+data/raw/
+data/processed/
+
+# Selenium / webdriver leftovers
+*.tmp
+*.bak
