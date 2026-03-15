@@ -22,11 +22,10 @@ This project demonstrates the potential of **Agentic AI architectures in real-wo
 
 The agent begins by interpreting the user goal and decomposing it into smaller executable tasks.
 
-Example user goal: Find 50 AI Engineer campus recruitment jobs
+Example user goal: ```Find 50 AI Engineer campus recruitment jobs```
 
 
-The agent automatically plans the workflow: Search → Scrape → Parse → Filter → Deduplicate → Export
-
+The agent automatically plans the workflow: ```Search → Scrape → Parse → Filter → Deduplicate → Export```
 
 This planning capability allows the agent to operate autonomously without manual intervention.
 
@@ -62,10 +61,7 @@ This iterative process ensures the agent eventually gathers the required number 
 
 ## LLM-Based Semantic Job Filtering
 
-The system uses **Large Language Models (LLMs)** to determine whether a job posting truly belongs to the AI engineering domain.
-
-The classifier analyzes job descriptions and identifies relevant technical domains such as:
-
+The system uses **Large Language Models (LLMs)** to determine whether a job posting truly belongs to the AI engineering domain. The classifier analyzes job descriptions and identifies relevant technical domains such as:
 - Machine Learning
 - Deep Learning
 - Natural Language Processing
@@ -88,9 +84,7 @@ Example extracted skills include:
 These tags help create structured technical skill profiles for each job posting.
 
 ## Data Cleaning and Deduplication
-
 The system automatically cleans and standardizes collected job data by performing:
-
 - Duplicate job detection
 - Missing data handling
 - Field normalization
@@ -98,9 +92,7 @@ The system automatically cleans and standardizes collected job data by performin
 This ensures that the final dataset is clean, consistent, and ready for analysis.
 
 ## Structured Output Generation
-
 The final job dataset is exported in structured formats:
-
 - JSON
 - CSV
 
@@ -280,9 +272,7 @@ Source: Lagou
 URL: https://example-job-url
 ```
 # Agent Capabilities Demonstrated
-
 This project demonstrates several core **Agentic AI capabilities**:
-
 - Autonomous task planning
 - External tool orchestration
 - LLM-powered semantic reasoning
@@ -291,9 +281,7 @@ This project demonstrates several core **Agentic AI capabilities**:
 - Structured data generation
 
 # Possible Extensions
-
 Future improvements could include:
-
 - Real-time job monitoring agents
 - AI-powered job recommendation systems
 - Resume-job matching automation
@@ -303,7 +291,6 @@ Future improvements could include:
 
 
 # Use Cases
-
 - Automated job search assistants
 - AI recruitment intelligence tools
 - Career analytics platforms
@@ -321,10 +308,5 @@ please consider giving it a ⭐ on GitHub.
 
 ## ⚠️ License & Usage Restriction
 © 2026 Mirage-AI. All rights reserved.
-
-No permission is granted to use, modify, distribute, or reproduce this software in any form.
-
-This repository is provided for **viewing purposes only**.
-
-Unauthorized use, reproduction, or distribution of this code or its concepts may result in legal action.
+No permission is granted to use, modify, distribute, or reproduce this software in any form. This repository is provided for **viewing purposes only**. Unauthorized use, reproduction, or distribution of this code or its concepts may result in legal action.
 
