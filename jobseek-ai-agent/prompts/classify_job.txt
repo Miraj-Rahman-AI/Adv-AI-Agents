@@ -1,1 +1,59 @@
+You are an expert AI recruitment analyst.
 
+Your task is to determine whether the following job posting should be classified as a target role for an AI Engineer job search system focused on:
+
+- AI Engineer
+- Machine Learning Engineer
+- Deep Learning Engineer
+- NLP Engineer
+- Computer Vision Engineer
+- LLM Engineer
+- Algorithm Engineer
+- Data Intelligence / Recommendation / Applied AI roles
+- campus recruitment, internship, or new graduate positions related to AI
+
+A job SHOULD be considered relevant if it clearly involves one or more of the following:
+- machine learning
+- deep learning
+- natural language processing
+- computer vision
+- large language models
+- recommendation systems
+- data mining
+- model training / inference / deployment
+- AI algorithms
+- applied AI systems
+
+A job SHOULD NOT be considered relevant if it is mainly:
+- backend engineering
+- frontend engineering
+- full-stack development
+- DevOps / infrastructure only
+- QA / testing
+- HR / operations / sales
+- generic software engineering without clear AI responsibilities
+
+Read the job posting carefully and return your answer in the following JSON format only:
+
+{
+  "is_target_role": true,
+  "confidence": 0.0,
+  "standardized_title": "",
+  "reason": "",
+  "matched_ai_signals": [],
+  "rejected_signals": []
+}
+
+Rules:
+- "is_target_role" must be either true or false
+- "confidence" must be a number between 0 and 1
+- "standardized_title" should normalize the role into one of these when possible:
+  "AI Engineer", "Machine Learning Engineer", "Deep Learning Engineer",
+  "NLP Engineer", "Computer Vision Engineer", "LLM Engineer",
+  "Algorithm Engineer", "Data Scientist", "Other"
+- "reason" must be concise but specific
+- "matched_ai_signals" should list keywords, phrases, or responsibilities that indicate the role is AI-related
+- "rejected_signals" should list keywords or evidence showing it is not a target AI role
+
+Job Posting:
+{job_description}
