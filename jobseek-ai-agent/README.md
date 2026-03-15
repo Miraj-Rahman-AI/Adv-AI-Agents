@@ -169,6 +169,7 @@ jobseek-ai-agent/
 │   └── skill_extractor_agent.py
 │
 ├── tools/
+│   ├── __init__.py
 │   ├── web_search_tool.py
 │   ├── scraper_tool.py
 │   ├── parser_tool.py
