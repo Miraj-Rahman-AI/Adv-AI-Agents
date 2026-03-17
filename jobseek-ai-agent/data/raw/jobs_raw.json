@@ -1,1 +1,26 @@
-
+[
+  {
+    "title": "AI Engineer Intern - Example Tech",
+    "company": "Example Tech",
+    "location": "Beijing",
+    "salary": "15K - 20K",
+    "requirements": "Experience with Python, PyTorch, NLP, and transformer models.",
+    "description": "We are looking for an AI Engineer Intern to support machine learning and LLM product development.",
+    "source": "indeed",
+    "job_url": "https://example.com/job/1",
+    "raw_html_source": "optional_raw_page_reference",
+    "scraped_at": "2026-03-18T12:00:00Z"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Demo AI Lab",
+    "location": "Shanghai",
+    "salary": "20K~30K",
+    "requirements": "Strong background in machine learning, TensorFlow, and computer vision.",
+    "description": "Build deep learning systems for real-world applications.",
+    "source": "lagou",
+    "job_url": "https://example.com/job/2",
+    "raw_html_source": "optional_raw_page_reference",
+    "scraped_at": "2026-03-18T12:05:00Z"
+  }
+]
