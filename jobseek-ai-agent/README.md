@@ -215,10 +215,11 @@ jobseek-ai-agent/
 │   └── report.md
 │
 ├── tests/
-│   ├── test_agents.py
-│   ├── test_parser.py
-│   ├── test_deduplication.py
-│   └── test_pipeline.py
+├── __init__.py
+├── test_agents.py
+├── test_parser.py
+├── test_deduplication.py
+└── test_pipeline.py
 │
 ├── examples/
 │   ├── demo_run.py
