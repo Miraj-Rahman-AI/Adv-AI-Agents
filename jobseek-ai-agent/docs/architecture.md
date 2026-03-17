@@ -13,11 +13,27 @@ The system follows a **modular, layered architecture** combining:
 
 ## High-Level Architecture
 JobSeek AI Agent follows an Agentic AI workflow architecture, where an intelligent agent coordinates multiple tools and reasoning modules.
-
-<p align="center">
-  <img src="assets/Agentic Al Job Search System.png" width="95%">
-</p>
-
+```
+User Goal
+↓
+Planner Agent
+↓
+Search Agent → Web Search Tool → Scraper Tool
+↓
+Parser Tool
+↓
+Job Pipeline
+↓
+Classifier Agent
+↓
+Skill Extractor Agent
+↓
+Deduplicator + Validator + Normalizer
+↓
+Exporter Tool
+↓
+Final Structured Output
+```
 
 ## Core Components
 
