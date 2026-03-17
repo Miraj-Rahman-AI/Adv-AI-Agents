@@ -1,1 +1,56 @@
-
+[
+  {
+    "title": "AI Engineer Intern",
+    "company": "Example Tech",
+    "location": "Beijing",
+    "salary": "15K-20K",
+    "tech_tags": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Transformers"
+    ],
+    "requirements": "Experience with Python, PyTorch, NLP, and transformer models.",
+    "description": "We are looking for an AI Engineer Intern to support machine learning and LLM product development.",
+    "source": "indeed",
+    "job_url": "https://example.com/job/1",
+    "classification_reason": "AI-related keywords detected: Python, PyTorch, NLP, transformer models.",
+    "is_target_role": true
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Demo AI Lab",
+    "location": "Shanghai",
+    "salary": "20K-30K",
+    "tech_tags": [
+      "TensorFlow",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning"
+    ],
+    "requirements": "Strong background in machine learning, TensorFlow, and computer vision.",
+    "description": "Build deep learning systems for real-world applications.",
+    "source": "lagou",
+    "job_url": "https://example.com/job/2",
+    "classification_reason": "AI-related keywords detected: machine learning, TensorFlow, computer vision.",
+    "is_target_role": true
+  },
+  {
+    "title": "LLM Engineer Intern",
+    "company": "Future AI",
+    "location": "Shenzhen",
+    "salary": "18K-28K",
+    "tech_tags": [
+      "Python",
+      "Transformers",
+      "LangChain",
+      "RAG"
+    ],
+    "requirements": "Familiar with LLM applications, retrieval-augmented generation, and prompt engineering.",
+    "description": "Support the development of LLM-powered products and agentic AI workflows.",
+    "source": "zhipin",
+    "job_url": "https://example.com/job/3",
+    "classification_reason": "Strong LLM and RAG relevance.",
+    "is_target_role": true
+  }
+]
