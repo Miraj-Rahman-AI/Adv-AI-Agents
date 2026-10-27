@@ -311,9 +311,11 @@ When contributing:
 
 ## License
 
-This repository is intended to use the **MIT License**.
+© 2026 Mirage-AI. All rights reserved.
 
-See the [`LICENSE`](LICENSE) file for the complete license terms. Ensure that the repository contains the corresponding MIT license text before distributing the projects under that license.
+No permission is granted to use, modify, distribute, or reproduce this software in any form.
+
+This repository is provided for **viewing purposes only**.
 
 ---
 
