@@ -311,11 +311,10 @@ When contributing:
 
 ## License
 
-© 2026 Mirage-AI. All rights reserved.
+[Adv-AI-Agents](https://github.com/Miraj-Rahman-AI/Adv-AI-Agents) has MIT License.
 
-No permission is granted to use, modify, distribute, or reproduce this software in any form.
+See the parent repository's [MIT License](../LICENSE) for the applicable license terms.
 
-This repository is provided for **viewing purposes only**.
 
 ---
 
