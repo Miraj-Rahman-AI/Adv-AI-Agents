@@ -541,11 +541,10 @@ Contribution guidelines may be expanded as the implementation matures.
 
 ## License
 
-© 2026 Mirage-AI. All rights reserved.
+HelpDesk-Agent is part of the [Adv-AI-Agents](https://github.com/Miraj-Rahman-AI/Adv-AI-Agents) repository.
 
-No permission is granted to use, modify, distribute, or reproduce this software in any form.
+See the parent repository's [MIT License](../LICENSE) for the applicable license terms.
 
-This repository is provided for **viewing purposes only**.
 
 ---
 
