@@ -1,0 +1,31 @@
+
+agents:
+  coordinator:
+    description: "Overall objective management"
+    tools: []
+
+  planner:
+    description: "Task decomposition and planning"
+    tools: []
+
+  researcher:
+    description: "Evidence retrieval"
+    tools:
+      - document_search
+
+  executor:
+    description: "Authorized tool operations"
+    tools:
+      - calculator
+
+  analyst:
+    description: "Analysis and interpretation"
+    tools: []
+
+  reviewer:
+    description: "Requirement and evidence verification"
+    tools: []
+
+  synthesizer:
+    description: "Final report synthesis"
+    tools: []
