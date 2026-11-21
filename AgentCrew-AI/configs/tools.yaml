@@ -1,0 +1,15 @@
+
+tools:
+  document_search:
+    description: "Search approved local Markdown documents"
+    action: read
+    resource: documents
+    allowed_roles:
+      - researcher
+
+  calculator:
+    description: "Safely evaluate basic arithmetic"
+    action: compute
+    resource: numbers
+    allowed_roles:
+      - executor
