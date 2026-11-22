@@ -1,0 +1,56 @@
+
+name: AgentCrew-AI Tests
+
+on:
+  push:
+    paths:
+      - "AgentCrew-AI/**"
+      - ".github/workflows/**"
+
+  pull_request:
+    paths:
+      - "AgentCrew-AI/**"
+      - ".github/workflows/**"
+
+jobs:
+  test:
+    name: Python Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version:
+          - "3.11"
+          - "3.12"
+          - "3.13"
+
+    defaults:
+      run:
+        working-directory: AgentCrew-AI
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Validate package import
+        run: |
+          python -c "import agentcrew; print(agentcrew.__version__)"
+
+      - name: Run tests
+        run: |
+          python -m pytest tests/ -v
+
+      - name: Validate CLI
+        run: |
+          agentcrew --help
