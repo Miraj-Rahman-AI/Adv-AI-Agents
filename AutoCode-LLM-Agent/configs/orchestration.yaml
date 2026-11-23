@@ -1,0 +1,13 @@
+
+orchestration:
+  max_concurrency: 3
+  max_retries: 1
+  max_tasks: 12
+  task_timeout_seconds: 120
+
+  require_review: true
+  stop_on_dependency_failure: true
+
+  execution:
+    allow_parallel_tasks: true
+    record_execution_events: true
